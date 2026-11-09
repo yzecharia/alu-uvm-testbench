@@ -1,0 +1,10 @@
+xsim.dir/
+.Xil/
+*.jou
+*.pb
+*.wdb
+*.str
+webtalk*
+xvlog.log
+xelab.log
+xsim.log

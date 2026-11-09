@@ -1,0 +1,93 @@
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/work/alu_pkg.svh" into library work
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/work/alu.sv" into library work
+INFO: [VRFC 10-311] analyzing module alu
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/work/alu_if.sv" into library work
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/work/alu_tb_top.sv" into library work
+INFO: [VRFC 10-311] analyzing module alu_tb_top
+Vivado Simulator v2024.1
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: /home/user/Xilinx/Vivado/2024.1/bin/unwrapped/lnx64.o/xelab -L uvm alu_tb_top -s sim --debug off 
+Multi-threading is on. Using 6 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-8967] first argument of $fatal is invalid; expected 0, 1 or 2 [alu_classes/result_monitor.svh:14]
+WARNING: [VRFC 10-8967] first argument of $fatal is invalid; expected 0, 1 or 2 [alu_classes/driver.svh:15]
+Completed static elaboration
+INFO: [XSIM 43-4329] Assuming default value 1 for the first arguement of $fatal at Line 14, File alu_classes/result_monitor.svh
+INFO: [XSIM 43-4329] Assuming default value 1 for the first arguement of $fatal at Line 15, File alu_classes/driver.svh
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4468] File : /proj/xbuilds/SWIP/2024.1_0404_1523/installs/lin64/Vivado/2024.1/data/system_verilog/uvm_1.2/xlnx_uvm_package.sv, Line : 25994, RANDC variable size more than 8 bits. This will be treated as a RAND variable instead.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package uvm.uvm_pkg
+Compiling package std.std
+Compiling package work.alu_pkg
+Compiling module work.cb
+Compiling module work.alu_if_default
+Compiling module work.alu_default
+Compiling module work.alu_tb_top
+Built simulation snapshot sim
+
+****** xsim v2024.1 (64-bit)
+  **** SW Build 5076996 on Wed May 22 18:36:09 MDT 2024
+  **** IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
+  **** SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
+  **** Start of session at: Sat May 16 14:29:23 2026
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source xsim.dir/sim/xsim_script.tcl
+# xsim {sim} -testplusarg UVM_TESTNAME=add_test -autoloadwcfg -runall
+Time resolution is 1 ps
+run -all
+UVM_INFO /home/user/Xilinx/Vivado/2024.1/data/system_verilog/uvm_1.2/xlnx_uvm_package.sv(18601) @ 0: reporter [UVM/RELNOTES] 
+----------------------------------------------------------------
+UVM-1.2
+(C) 2007-2014 Mentor Graphics Corporation
+(C) 2007-2014 Cadence Design Systems, Inc.
+(C) 2006-2014 Synopsys, Inc.
+(C) 2011-2013 Cypress Semiconductor Corp.
+(C) 2013-2014 NVIDIA Corporation
+----------------------------------------------------------------
+
+  ***********       IMPORTANT RELEASE NOTES         ************
+
+  You are using a version of the UVM library that has been compiled
+  with `UVM_NO_DEPRECATED undefined.
+
+  You are using a version of the UVM library that has been compiled
+  with `UVM_OBJECT_DO_NOT_NEED_CONSTRUCTOR undefined.
+
+      (Specify +UVM_NO_RELNOTES to turn off this notice)
+
+UVM_INFO /home/user/Xilinx/Vivado/2024.1/data/system_verilog/uvm_1.2/xlnx_uvm_package.sv(18648) @ 0: reporter [NO_DPI_TSTNAME] UVM_NO_DPI defined--getting UVM_TESTNAME directly, without DPI
+UVM_INFO @ 0: reporter [RNTST] Running test add_test...
+UVM_INFO /home/user/Xilinx/Vivado/2024.1/data/system_verilog/uvm_1.2/xlnx_uvm_package.sv(20867) @ 0: reporter [UVM/COMP/NAMECHECK] This implementation of the component name checks requires DPI to be enabled
+UVM_INFO /home/user/Xilinx/Vivado/2024.1/data/system_verilog/uvm_1.2/xlnx_uvm_package.sv(19968) @ 300475000: reporter [TEST_DONE] 'run' phase is ready to proceed to the 'extract' phase
+UVM_INFO alu_classes/coverage.svh(44) @ 300475000: uvm_test_top.env_h.coverage_h [coverage] Coverage is: 74.33%
+UVM_INFO alu_classes/scoreboard.svh(42) @ 300475000: uvm_test_top.env_h.scoreboard_h [scoreboard] Test PASS: 10000/10000
+UVM_INFO alu_classes/add_test.svh(17) @ 300475000: uvm_test_top [add_test] add_test FINISHED
+UVM_INFO /home/user/Xilinx/Vivado/2024.1/data/system_verilog/uvm_1.2/xlnx_uvm_package.sv(13673) @ 300475000: reporter [UVM/REPORT/SERVER] 
+--- UVM Report Summary ---
+
+** Report counts by severity
+UVM_INFO :    8
+UVM_WARNING :    0
+UVM_ERROR :    0
+UVM_FATAL :    0
+** Report counts by id
+[NO_DPI_TSTNAME]     1
+[RNTST]     1
+[TEST_DONE]     1
+[UVM/COMP/NAMECHECK]     1
+[UVM/RELNOTES]     1
+[add_test]     1
+[coverage]     1
+[scoreboard]     1
+
+$finish called at time : 300475 ns : File "/home/user/Xilinx/Vivado/2024.1/data/system_verilog/uvm_1.2/xlnx_uvm_package.sv" Line 18699
+exit
+INFO: xsimkernel Simulation Memory Usage: 599232 KB (Peak: 650496 KB), Simulation CPU Usage: 330 ms
+INFO: [Common 17-206] Exiting xsim at Sat May 16 14:29:28 2026...
+
